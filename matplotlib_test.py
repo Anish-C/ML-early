@@ -3,8 +3,8 @@ import numpy as np
 
 # Training Data for the x-axis and y-axis
 learn_x = np.random.uniform(0, 10, size=100)
-learn_y = np.random.uniform(0, 10, size=100)
-
+learn_y = 2*learn_x +np.random.normal(0, 1, size=100)
+# we can multiply x_learn by anything, this coefficient will be the weight with the lowest mse, the np.random adds variation
 # Create a line plot
 
 plt.scatter(learn_x, learn_y, label='Training Set')
